@@ -18,6 +18,11 @@
  * You should have received a copy of the GNU General Public License
  * along with this program; if not, see <http://www.gnu.org/licenses>.
  */
+/*
+ * This file has been modified by g.caporaletti@reaqta.com
+ * ThreadSafety annotation on this class has been removed because it
+ * causes a warning in the scala compiler
+ */
 package com.unboundid.util;
 
 
@@ -27,7 +32,6 @@ package com.unboundid.util;
  * indicate whether the associated code is safe to be accessed concurrently
  * by multiple threads.
  */
-@ThreadSafety(level=ThreadSafetyLevel.COMPLETELY_THREADSAFE)
 public enum ThreadSafetyLevel
 {
   /**
